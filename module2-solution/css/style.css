@@ -1,1 +1,96 @@
-* {box-sizing: border-box; margin:0; padding:0}
+/*** ITEM 5 - Must include CSS file ***/
+
+/* reset styling */
+* {box-sizing: border-box; margin:0; padding:0;}
+
+
+
+/*** ITEM 15 - increase font of headings and page font family change ***/
+body {
+	font-size: 18px;
+	font-family: Helvetica, Arial, sans-serif;
+}
+h1 { font-size: 175%; text-align: center;}
+
+header {
+	margin-top: 50px; 
+	margin-bottom: 50px;
+}
+
+/*** ITEM 6 - Responsive Layout ***/
+
+/* I decided not to use a 12 cell grid structure for my responsive layout
+** The assignment does not appear to call for my responsive grid to 
+** be set at 12 cells, although I do understand the importance of a 12 cell grid layout 
+**/
+#content-wrapper {
+	padding: 15px;
+}
+
+.title-yellow {
+	background-color: #FFFACD;
+}
+.title-red {
+	background-color: #DC143C;
+	color: #FFFFFF;
+}
+.title-salmon {
+	background-color: #FA8072;
+}
+
+.row { 
+	width: 100%; 
+}
+
+/* apply styling to first level child section divs inside the row */
+.row > div > section {
+  	margin-right: 15px;
+  	margin-left: 15px;
+  	margin-bottom: 30px;
+	position: relative;
+	padding: 40px 15px 15px 15px;
+	background-color: #87CEFA;
+	opacity: .75;
+	border: 1px solid black;
+}
+
+/*apply basic styling and position to section Title div */
+.row > div > section > section {
+	position: absolute;
+	top: 0;
+	right: 0;
+	text-align: center;
+	vertical-align: middle;
+	width: 150px;
+	padding: 5px 0px;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
+	font-size: 125%;
+}
+/*** ITEM 7 media breakpoints ***/
+
+/* desktop view */
+@media (min-width: 992px)
+{
+.col-lg-third, .col-lg-half, .col-lg-whole {float: left;}
+.col-lg-third { width: 33.33%; }
+.col-lg-half { width: 50%; }
+.col-lg-whole { width: 100%; }
+}
+
+/* tablet view */
+@media (min-width: 768px) and (max-width: 991px)
+{
+.col-md-third, .col-md-half, .col-md-whole {float: left;}
+.col-md-third { width: 33.33%; }
+.col-md-half { width: 50%; }
+.col-md-whole { width: 100%; }
+}
+
+/* mobile view */
+@media (max-width: 767px)
+{
+.col-sm-third { width: 33.33%; }
+.col-sm-half { width: 50%; }
+.col-sm-whole { width: 100%; }
+}
