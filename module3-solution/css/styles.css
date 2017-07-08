@@ -68,6 +68,9 @@ body {
   clear: both;
   margin-top: -40px;
 }
+#nav-button:hover {
+	background-color: #985b90;
+}
 
 .container .menu-items {
   box-shadow: 0 0 20px #ccc;
