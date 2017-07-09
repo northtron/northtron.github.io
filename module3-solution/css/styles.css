@@ -81,7 +81,7 @@ body {
 #apple-tile, #bacon-tile, #popsicle-tile {
   min-height: 1000px;
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
   position: relative;
   border: 1px solid #777;
   overflow: hidden;
