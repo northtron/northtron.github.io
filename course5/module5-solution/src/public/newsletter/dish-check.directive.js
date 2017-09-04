@@ -4,7 +4,7 @@
 angular.module('public')
 .directive('dishCheck', dishCheck);
 
-dishValidation.$inject = ['MenuService']
+dishCheck.$inject = ['MenuService']
 
 function dishCheck(MenuService) {
   var menu_items;
